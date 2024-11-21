@@ -1,0 +1,143 @@
+/* Sidebar container */
+.sidebar {
+  height: 100vh; /* Full height of the viewport */
+  width: 150px; /* Sidebar width */
+  position: fixed; /* Make it fixed on the left */
+  top: 0;
+  left: 0;
+  background-color: #333; /* Dark background */
+  padding-top: 100px; /* Add space at the top */
+  transition: 0.3s; /* Smooth transition when hovering or collapsing */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.sidebar ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.sidebar li {
+  padding: 15px 20px; /* Padding for each item */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  color: #fff; /* White text */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.sidebar li:hover {
+  background-color: #444; /* Darker background on hover */
+}
+
+.sidebar li div {
+  margin-left: 10px; /* Space between the icon and the text */
+}
+
+.sidebar li .icon {
+  font-size: 20px; /* Larger size for the icon */
+}
+
+/* Active link (optional if you want active state styling) */
+.sidebar li.active {
+  background-color: #007bff; /* Blue background for active item */
+}
+
+
+
+
+
+/* Navigation---------------------------------------- */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar Styles */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Make sure it sits above the sidebar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navBar .profile {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navBar input[type="text"] {
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px; /* Set a fixed width for the search bar */
+}
+
+.navBar .search {
+  margin-top: 5px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px; /* Space between input and button */
+  transition: background-color 0.3s ease;
+}
+
+.navBar .search:hover {
+  background-color: #0056b3;
+}
+
+.navBar .login {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.navBar .login:hover {
+  background-color: #218838;
+}
+@media (max-width: 600px) {
+  .navBar .profile {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+/* ----------------------------------------Hero------------------------------- */
+
+
+.hero{
+  margin-left: 200px;
+  margin-top: 100px;
+  background-color: #0056b3;
+  height: auto;
+}
+
+
+
+
+

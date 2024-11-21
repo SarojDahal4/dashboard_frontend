@@ -1,0 +1,227 @@
+/* Main container for the product page */
+
+.product-container {
+  background-color: aqua;
+
+  padding: 20px;
+  text-align: center;
+  padding-left: 20vh;
+  padding-top: 70px;
+
+  width: 100%;
+
+  height: auto;
+  overflow: hidden;
+  
+}
+
+/* Wrapper for the cards to make them scroll horizontally */
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  gap: 20px; /* Space between the cards */
+  padding-bottom: 10px; /* Optional: add padding to the bottom */
+}
+
+/* Style for individual cards (CardContainer) */
+.card-container {
+  min-width: 250px; /* Set a fixed minimum width for each card */
+  max-width: 300px; /* Optional: set a maximum width for the card */
+  background-color: #f9f9f9; /* Background color of the card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Internal padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  text-align: center;
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for cards */
+.card-container:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Optional: Adjust the card container for smaller screens */
+
+.productSearch {
+  padding: 10px 15px; /* Add padding inside the input */
+  font-size: 16px; /* Set font size for the text */
+  width: 100%; /* Full width to make the input responsive */
+  max-width: 400px; /* Limit the max width */
+  margin: 10px 0; /* Add spacing around the input */
+  border-radius: 25px; /* Rounded corners */
+  border: 2px solid #ccc; /* Light border */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+.productSearch:hover {
+  cursor: text;
+}
+@media (max-width: 768px) {
+  .productSearch {
+    width: 50%;
+    max-width: none;
+    border-radius: 20px;
+  }
+  .searching {
+    display: flex;
+  }
+}
+.category {
+  color: #382828;
+  font-size: medium;
+  font-weight: bold;
+}
+.search_product{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* ----------------------------------------------Customer Pages----------------- */
+
+/* pages.css */
+
+/* Styling the page container */
+.customer-page {
+  background-color: hsl(0, 17%, 95%);
+
+  padding: 20px;
+  text-align: center;
+  padding-left: 25vh;
+  padding-top: 70px;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Wrapper for the table */
+.card-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Styling the table */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.customer-table th,
+.customer-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.customer-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+.customer-table tr:hover {
+  background-color: hsl(0, 17%, 90%);
+}
+
+.customer-page .no-customers {
+  text-align: center;
+  color: #888;
+  font-size: 1.2em;
+}
+@media (max-width: 780px) {
+  .customer-page {
+    background-color: hsl(0, 17%, 95%);
+
+    padding: 20px;
+    text-align: center;
+    padding-left: 20vh;
+    padding-top: 70px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    font-family: Arial, sans-serif;
+  }
+}
+@media (max-width: 600px) {
+  .customer-page {
+    background-color: hsl(0, 17%, 95%);
+
+    padding: 20px;
+    text-align: center;
+    padding-left: 17vh;
+    padding-top: 70px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    font-family: Arial, sans-serif;
+  }
+}
+/* ----------------------------------------------Home Pages----------------- */
+.dashBoard {
+  background-color: hsl(0, 58%, 93%);
+  max-width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding: 20px;
+  padding-left: 19vh;
+  padding-top: 70px;
+}
+.totalCard {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  gap: 20px;
+}
+.totalCard h3 {
+  padding: 20px;
+}
+.totalPrice,
+.totalProduct,
+.totalcustomer,
+.Dash {
+  box-shadow: 0 4px 8px rgba(4, 4, 4, 0.96);
+  padding: 5px;
+
+  border: solid black;
+  border-radius: 5px;
+}
+.home-customer-table {
+  width: 45vh;
+  border: 2px solid;
+}
+
+.home-customer-table th,
+.home-customer-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 5px black;
+}
+
+.home-customer-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+.sorted_total{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
